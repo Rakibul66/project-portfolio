@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<title>portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="water.css">
+  <link rel="stylesheet" href="skills.css">
+  
+    <style type="text/css">
+    
+    *,
+        *::before,
+        *::after{
+            
+            box-sizing: border-box;
+        }
+    
+        *:focus{
+            outline: none;
+        }
+    
+        body{
+            
+            
+            padding: 0;
+            margin: 0;
+            background: #000;
+            color: white;
+			width:85%;
+			margin-left:170px;
+            font-family: "Oxygen",sans-serif;
+			
+         
+          
+        }
+		
+		
+		#particles-js{
+		
+	  background-size: cover;
+                
+          
+        background-position: center;
+            
+            -webkit-filter:grayscale(100%)
+                contrast(100%);
+            filter: grayscale(100%)contrast(200%)
+                brightness(60%);
+           
+    
+        
+		background-image: url(image/a.jpg);
+		}
+        
+        a{
+            text-decoration: none;
+        }
+		a:link{
+		color:white;
+		}
+		a:visited{
+		color:#000d33;
+		}
+		a:hover{
+		color:green;
+		}
+		a:active{
+		color:bfff00;
+		}
+        
+        img{
+            
+            width: 100%;
+			
+        }
+    
+        .folio img{
+            filter:grayscale(100%);
+        }
+        div.follow{
+            color: white;
+            border:groove;
+    
+            background-color:#828282;
+            
+        }
+        aside{
+            
+            position: fixed;
+            background: #222;
+            top: 0px;
+            left: 0px;
+            width: 80px;
+            height: 80%;
+            overflow: none;
+            z-index: 1;
+            text-align: center;
+            padding: 0;
+        }
+        aside img{
+            
+            filter: grayscale(100%)contrast(80%)
+                brightness(80%);
+				height:100px;
+            margin-bottom: -3px;
+        }
+        .material-icons.md-36{
+            
+            font-size: 36px;
+        }
+        aside a{
+            
+            display: block;
+            padding: 15px 0;
+            color: white;
+            transition: all 0.35s;
+                text-transform:uppercase;
+            font-size: 0.75em;
+            letter-spacing: 2px;
+            
+        }
+        aside p{
+            
+            margin: 0;
+            padding: 0;
+        }
+        aside a:hover{
+            background: #000;
+        }
+        aside nav a:nth-child(2){
+            background: #000;
+        }
+        aside nav a:nth-child(2):hover{
+            background: #b2b2b2;
+            color: #222;
+        }
+        main{
+            max-width: 980px;
+            background: #000;
+            margin-left: 20%;
+            padding: 12px 50px 12px 50px;
+        }
+        
+        
+    
+
+        
+        header h5{
+            font-weight: 300;
+            font-size: 1em;
+            letter-spacing: 4px;
+            color: #b2b2b2;
+        }
+        .about,
+        .folio,
+        .contact{
+            
+            line-height: 1.5em;
+            letter-spacing: 1px;
+            font-weight: 300;
+        }
+           .about h2,
+        .folio h2,
+        .contact h2{
+            
+            font-weight: 300;
+            text-transform: uppercase;
+            text-decoration: line-through;
+            padding-bottom: 10px;
+            margin: 100px 0 0 0;
+            letter-spacing: 4px;
+        }
+        .about p{
+            color:#b2b2b2;
+        }
+         .about span{
+            font-weight: 600;
+             color: white;
+        }
+         .about h3{
+            font-weight: 300;
+             margin: 50px 0;
+        }
+        .container{
+            width: 100%;
+            background-color: #b2b2b2;
+        }
+
+		
+		
+        
+        .folio h3{
+            
+            color:white;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        .folio p{
+            font-size:0.875em;
+        }
+        .container{
+            
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: space-between;
+        
+            -webkit-flex-pack:justify;
+				
+			
+        }
+		.container .content{
+		text-align: center;
+   
+    background: #000;
+    box-sizing: border-box;
+    transform-origin: left;
+    transition: .5s;
+    transform: rotateY(90deg)perspective(600px);
+		
+		}
+        
+        
+		.container:hover .content{
+    
+    transform: rotateY(0deg);
+}
+        
+
+.container:hover .imagebox{
+    
+    transform: rotateY(0deg)translateX(50%);
+}
+        
+		.container .content h3{
+            text-align: center;
+    
+   
+    border:double;
+    color: #fff;
+    font-size: 20px;
+}
+        .container .imagebox{
+            width: 50%;
+			 transition: .8s;
+           
+        }
+        .imagebox{
+            
+            border: 1px solid #222;
+            background: #000;
+            color:#000;
+            padding: 10px;
+        }
+        
+       
+        
+       .container2 .content2{
+		text-align: center;
+   
+    background: #000;
+    box-sizing: border-box;
+    transform-origin: right;
+    transition: .5s;
+    transform: rotateY(90deg)perspective(600px);
+		
+		}
+        
+        
+		.container2:hover .content2{
+    
+    transform: rotateY(0deg);
+}
+        
+
+.container2:hover .imagebox2{
+    
+    transform: rotateY(0deg)translateX(50%);
+}
+        
+		.container2 .content2 h3{
+            text-align: center;
+    
+   
+    border:double;
+    color: #fff;
+    font-size: 20px;
+}
+        .container2 .imagebox2{
+            width: 50%;
+            
+			 transition: .6s;
+           
+        }
+        .imagebox2{
+            
+            border: 1px solid #222;
+            background: #000;
+            color:#000;
+            padding: 8px;
+        } 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        label{
+            color:#000;
+        }
+        form input[type="text"],
+        select,
+        textarea{
+            
+            width:100%;
+            padding: 12px;
+            border: none;
+            border: 1px solid #222;
+            background: transparent;
+            margin-top: 6px;
+            
+            margin-bottom: 16px;
+            resize: vertical;
+            color: #b2b2b2;
+        }
+        
+        form input[type="text"]:focus,textarea:focus{
+            outline: none;
+            border: 1px solid #009688;
+        }
+        input[type="submit"]{
+            background-color: transparent;
+            color: #b2b2b2;
+            text-transform: uppercase;
+            padding: 12px 20px;
+            border: 1px solid #222;
+              cursor: pointer;
+            transition: all 0.35s;
+        }
+        
+           input[type="submit"]{
+            background-color: transparent;
+            color: #b2b2b2;
+            text-transform: uppercase;
+            padding: 12px 20px;
+            border: 1px solid #222;
+              cursor: pointer;
+            transition: all 0.35s;
+        }
+        
+           input[type="submit"]:hover{
+            background-color: transparent;
+            color: #222;
+           
+        }
+        
+        .contact .container{
+            margin-top: 20px;
+            margin-bottom: 100px;
+            background: transparent;
+            padding: 20px 0;
+        }
+        .footer{
+  border-top:1px solid #222;
+
+			
+        }
+        .top-bar{
+            
+            padding: 20px 0;
+            text-align: center;
+        }
+        .top-bar a{
+            margin: 10px;
+            font-size: 2em;
+            color: #b2b2b2;
+            transition: all 0.35s;
+            display: inline-block;
+        }
+        .top-bar a:hover{
+            transform: scale(1.1);
+            color: #009688;
+        }
+        
+        .bottom-bar{
+            background: #000;
+            font-size: 0.75em;
+            text-align: center;
+        }
+        
+        @media(max-width: 768px){
+            .container{
+                display: block;
+            }
+            .container .imagebox{
+                width: 50%;
+                margin: 0 0 10px 0;
+            }
+        }
+        
+           @media(max-width: 601px){
+            aside{
+                display: none;
+            }
+            main{
+                width: 100%;
+                margin: 0 auto;
+                padding: 12px 25px;
+            }
+               header{
+                   margin-top: 80px;
+               }
+               header h1{
+                   font-size: 3em;
+               }
+                 header h5{
+                   font-size: 1em;
+                     letter-spacing: 2px;
+               }
+               .mobile-nav{
+                   position: fixed;
+                   width: 100%;
+                   display: flex;
+                   justify-content: space-around;
+                   background: rgba(0,0,0,0.8);
+                   z-index: 1;
+               }
+               .mobile-nav a{
+                   width: 100%;
+                   color: #b2b2b2;
+                   text-transform: uppercase;
+                   font-size: 0.875em;
+                   letter-spacing: 2px;
+                   text-align: center;
+                   padding: 10px 10px;
+                   transition: all 0.35s;
+               }
+               .mobile-nav a:hover{
+                   background: #000;
+                   color: #222;
+               }
+        }
+        @media(min-width:600px){
+            .mobile-nav{
+                display: none;
+            }
+        }
+         
+        
+
+
+        
+    </style>
+	
+
+</head>
+<body>
+
+ 
+ 
+    <aside>
+        <nav>
+            
+        <img src="image/a.jpg" alt="myimage">
+            <a href="#home"><i class="material-icons md-36">Home</i>
+                <p>Home</p>
+                 </a>
+                  <a href="#about"><i class="material-icons md-36">person</i>
+                <p>About</p>
+                       </a>
+                        <a href="#folio"><i class="material-icons md-36">image</i>
+                <p>Folio</p>
+                             </a>
+            
+                              <a href="#contact"><i class="material-icons md-36">mail</i>
+                <p>Contact</p>
+        
+            
+            </a>
+        
+        </nav>
+		 </aside>
+    <nav class="mobile-nav">
+        
+        
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#folio">Folio</a>
+        <a href="#contact">Contact</a>
+        </nav>
+        <main>
+        <header class="home"  id="home"><br><br>
+            <div class="middle" >
+           <h1>Rakibul Hasan</h1>
+            <h5>Designer//Developer</h5>
+			<br>
+                	  
+
+            
+                            </div>
+            
+            
+            
+            </header>
+            <div id="particles-js">
+                   </div>
+        
+        </main>
+               
+
+               
+		 
+                    
+             <div >
+    <section class="about"  id="about">
+	
+      
+			<h2>About Me</h2>
+		
+        <p>
+        <span>Hello,I am Rakibul hasan</span><br>
+          Basically I want to serve for humanity and also to obtain a standard job in my well-known organization where I can apply. As a student of computer engineer, I have acquired a good knowledge in programming, web design etc. Creating beautiful and applicable web pages is my passion and fashion. I have good presentation skills both in English and Bangla verbally and written as well as my English proficiency is good.
+        
+        </p>
+        <p>
+        I beleive in user centered design and delivering the best possible experiences to people.I have experience in html css,bootstrap,javascript,jquery.
+        
+        </p>
+     
+    <div class ="wrapper">
+    
+    <h2 class="header2">My skills</h2>
+    
+    <h3>Html</h3>
+    <div class="line line1">85%</div>
+ <h3>Java</h3>
+    <div class="line line2">65%</div>
+    <h3>Php</h3>
+    <div class="line line3">50%</div>
+    <h3>C++</h3>
+    <div class="line line4">45%</div>
+  
+
+    
+    </div>
+       
+        
+        </section>
+    
+        <section class="folio" id="folio">
+        <h2>Folio</h2>
+            <div class="container">
+            <div class="imagebox">
+                <img src="image/b.jpg" alt="">
+               
+                </div>
+     <div class="content">
+                 <h3>Programming Skills</h3>
+
+                <ul type="none">
+	  				<li>Languages: C,C++,Java,Javascript</li>
+	  				<li>Database: MySQL, SQL Server, Firebase,PHP</li>
+	  				<li>Operating System: Windows,Linux</li>
+	  			</ul>
+    </div>
+	</div>
+    
+				<br>
+				
+				
+		 <div class="container2">
+            <div class="imagebox2">
+                <img src="image/c.jpg" alt="">
+               
+                </div>
+     <div class="content2">
+                 <h3>Interest</h3>
+                <ul type="none">
+	  	<li>Gardening</li>
+	  	<li>Reading Tech Journals and Blogs </li>
+	  	<li>Gaming </li>
+	  	<li>Travelling </li>
+	  	<li>Sports </li>
+	 	<li>Music </li>
+	  </ul>
+    </div>
+	</div>		
+				
+				
+				
+				
+				
+				
+                
+
+        
+        
+        </section>
+		
+        <section class="contact" id="contact">
+        <h2>Contact</h2>
+            <div class="container">
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email">
+                    <label for="message">Message</label>
+                    <textarea name="" id="message" style="height: 150px"></textarea>
+                    <input type="submit" value="message">
+                </form>
+                <br>
+                
+                  
+                    <hr>
+               
+      
+           
+                </div>
+            
+        
+        
+        </section>
+         </div>
+	
+        <footer>
+       
+                   <div class="box">
+        <span class="ion-email">
+        </span>
+        <h2>Subscribe Now</h2>
+        <p>Rakibul Hasan</p>
+        <div class="tbox">
+        <input type="email" name=""value="">
+            <a class="ion-checkmark" href="https://www.youtube.com/channel/UCouAdLdE5lD8P20slNxJTBw/featured"></a>
+            <div>
+            
+            </div>
+               
+        
+        </div>
+    </div>
+		
+      
+	 <script type="text/javascript" src="particles.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+   
+            <section class="bottom-bar">
+            <p>&copy 2019 | All rights reserved</p>
+            
+            </section>
+        
+        
+        
+        </footer>
+		
+       
+  
+
+	
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    
+    background:bfff00;
+border:solid;
+
+    transform: translate(-50%,-50%);
+    width:600px;
+
+	border-radius:20px;
+    padding: 15px;
+   
+    overflow: hidden;
+    color: #313131;
+	margin-left:500px;
+}
+.box span{
+    
+    font-size: 50px;
+    height: 40px;
+    display: block;
+    line-height: 60px;
+    text-align: center;
+}
+.box h2{
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+.box p{
+    
+    text-transform: uppercase;
+    text-align: center;
+    font-size:10px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.tbox{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    overflow: hidden;
+    background: #313131;
+}
+.tbox a{
+    float: right;
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    font-size: 20px;
+    background: #2980b9;
+    border-radius: 40px;
+    transition: 0.8s all;
+}
+.tbox input{
+    
+    border: none;
+    margin: 0 14px;
+    width:372px;
+    background: none;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    color: aliceblue;
+    padding: 10px 0;
+}
+.tbox a:hover{
+    opacity: 0.8;
+}
